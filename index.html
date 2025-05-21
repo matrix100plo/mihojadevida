@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>CV hoja de vida </title>
+
+    <style>
+        
+        body{ 
+             /* Inserción de las margenes */
+            margin:0;
+            /* Espaciado interno*/
+            padding: 0;
+            /*color pantalla etiqueta cuerpo */
+            background: #6ddf74;
+        }  
+        
+        .name{
+            /*ancho*/
+            width:100% ; 
+            /*largo*/
+            height: 300px;
+            /*Color de fondo div  */
+            background: #99eeee;
+            /* Colocar el color de la clase estilo diagonal */
+            transform: skewY(-5deg);
+         }
+
+         /*Creación de una cadena de estilo CSS*/
+         .name .content { 
+            width: 50%;
+            height: 50%;
+            /* Marcador de posición */
+            position:absolute;
+            /*Dirección hacia donde mover el estilo seleccionado */
+            left:25%;
+         }
+         .name .content .p-1 {
+            color:rgb(0, 0, 0);
+            /*Estilo de letra asignado desde google fonts*/
+            font-family: "Open Sans", serif;
+            font-weight: bold;
+            /*Tamaño de la letra*/
+            font-size: 45px;
+            /*Evitar el ladeado del texto volviendo a su posición de origen */
+            transform: skewY(5deg);
+            /*Margen para evitar el espacio de abajo(Buttom)*/
+            margin-bottom: 0;
+         }
+         .name .content .p-2 {
+            color:black;
+            font-family: "Open Sans", serif;
+            font-size: 25px;
+            transform: skewY(5deg);
+            /*Margen para evitar el espacio de arriba(top)*/
+            margin-top: 0;
+            margin-bottom: 0;
+         }
+         /* Creación de los estilos de imagen ( Opcional) */
+         .name .img {
+            position: absolute;
+            top:18%;
+            right: 5%;
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+            transform: skewY(5deg);
+            /*Redireccionar la imagern*/
+            overflow: hidden;
+         }
+         .name .img img {
+            width: 150px;px ;
+            height: 150px;
+         }
+         .info {
+            width:90%;
+            height: auto;
+            background:   #3ff3c6;
+            /* Colocación de espacio para evitar el cruce con el div anterior */
+            margin: 5% auto;
+            /*Asignación margenes div clase info */
+            padding: 20px;
+            border-radius: 20px;
+         }
+         .info .tituloseccion {
+           color:  black;
+           /*asignación de fondo de texto */ 
+           font-family: 'Gill Sans',  sans-serif;
+           /*asignación de tamaño de la letra*/
+           font-size: xx-large;
+           /* Alineación del texto en la mitad de la página */
+           text-align: center;
+           /*Asignación de la negrilla en el texto */
+           font-weight: bolder;
+           /*Asignación linea debajo del titulo donde "dashed" significa punteado*/
+           border-bottom: 2px  rgb(255, 0, 0) dashed ;
+         }
+
+         .info .titulonombre {
+            color:black;
+            font-family:'Gill Sans',  sans-serif ;
+            font-weight: bolder;
+            font-size: large;
+            /* codigo para que quede un elemento seguido de otro*/
+            display: inline;
+            margin-right: 20px;
+         }
+
+         .info .infonombre {
+            color:black;
+            font-family:'Gill Sans',  sans-serif ;
+            font-weight: normal;
+            font-size: large;
+            display: inline;
+         }
+    </style>
+</head>
+<body> 
+    <!--Creación de la división -->
+    <!-- Creación de la clase acerca de perfin laboral en la división -->
+     <div class="name">
+        <!-- Creación de la imagen para la hoja de vida -->
+         <div class="img">
+            <img src="dczxjft-bd8c31d1-1d47-4bf5-8491-be73c73fb43e.png" alt="">
+         </div>
+        <!--Creación de la clase interna de la división de clase name-->
+         <div class="content">
+            <!--Creación de la clase para cada uno de los parrafos -->
+            <p class="p-1">matias restrepo parra</p>
+            <p class="p-2"> 14 años  , estudiante</p>
+        </div>
+    </div> 
+
+     <div class="info">
+        <p class="tituloseccion">Información Personal</p>
+        <p class="titulonombre">Nombres y apellidos:</p>
+        <p class="infonombre">restrepo parra matias</p><br>
+        <p class="titulonombre">Telefono:</p>
+        <p class="infonombre">(+57)3236418544</p><br>
+        <p class="titulonombre">Email:</p>
+        <p class="infonombre">matias.restrepo@gmail.com</p><br>
+
+     </div>
+
+    <div class="info">
+        <p class="tituloseccion">Perfil profesional</p>
+        <p class="infonombre">un estudiante comprometido a avnzar en la fase intelectual ,artistica y deportiva ,
+            consentrandome mas para mi futura carrera universitartia en informatica empezando con esta ezpecializacion.
+            teniendo mucho interes en la informatica.
+             </p>
+    </div>
+
+     <div class="info">
+        <p class="tituloseccion">Educación e información</p>
+        <p class="titulonombre">Básica Primaria:</p>
+        <p class="infonombre">salesiano san jose de mosquera - 2020 </p><br>
+        <p class="titulonombre">Básica Secundaria:</p>
+        <p class="infonombre">salesiano san jose de mosquera- en progreso</p><br>
+        <p class="titulonombre">Educación superior:</p>
+        <p class="infonombre">ninguna todavia </p><br>
+
+     </div>
+
+     <div class="info">
+        <p class="tituloseccion">Experiencia laboral</p>
+        <p class="titulonombre">Nombre de la empresa:</p>
+        <p class="infonombre">fr parrilla comidas lentas</p><br>
+        <p class="titulonombre">Funciones:</p>
+        <p class="infonombre">Enseñar el área ,mostrar los menus a los trabajadores,lave los platos al final del dia,poner la musica y peliculas del ambiente.</p><br>
+        <p class="titulonombre">Año de labor:</p>
+        <p class="infonombre">2019</p><br>
+
+     </div>
+</body>
+</html>
+
